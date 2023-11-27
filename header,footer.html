@@ -118,8 +118,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="생활코딩 Fileupload.html">File upload</a>
-                                    <a class="nav-link" href="header,footer.html">header, footer</a>
+                                    <a class="nav-link" href="생활코딩 Github.html">Github</a>
+                                    <a class="nav-link" href="생활코딩 Github2.html">Github2</a>
                                 </nav>
                             </div>
                             
@@ -134,57 +134,80 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">File upload</h1>
+                        <h1 class="mt-4">header, footer(h1)</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Fileupload</li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">footer, header</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-book-open me-1"></i>
-                                upload Form 구성 요소
+                                header, footer
                             </div>
                             <div class="card-body">
-                                <p>이 예제는 input type="file"을 사용하여 이미지를 선택하고, 선택한 이미지를 미리보기하는 간단한 HTML 페이지를 만듭니다. 선택한 이미지는 FileReader 객체를 사용하여 데이터 URL로 변환되고, 이를 이미지 요소의 src 속성에 할당하여 미리보기가 가능하게 됩니다.</p>
+                                <p>HTML의 header와 footer 요소는 웹 페이지의 구조를 나타내는데 사용됩니다. 각각 페이지의 맨 위와 맨 아래에 위치하며, 일반적으로 사이트의 로고, 제목, 메뉴 등을 담고 있는 헤더 영역과 페이지의 하단에 있는 저작권 정보, 연락처 등을 담고 있는 푸터 영역을 표현하는 데 사용됩니다.</p>
                             </div>
                         </div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-book-open me-1"></i>
-                                upload Form
+                                header의 요소
                             </div>
                             <div class="card-body">
-                                <input type="file" id="imageInput" accept="image/*">
-    							
-
-    							<script>
-        							document.getElementById('imageInput').addEventListener('change', function (e) {
-           								var fileInput = e.target;
-           								var file = fileInput.files[0];
-
-            							if (file) {
-               								var reader = new FileReader();
-
-               								reader.onload = function (e) {
-                								var previewImage = document.getElementById('preview');
-                 								previewImage.src = e.target.result;
-             								};
-
-               								reader.readAsDataURL(file);
-         								}
-    								});
-   								</script>
-                             </div>
-                         </div>
+                                <P>- header 요소는 웹 페이지나 섹션의 헤더를 정의합니다.</P>
+                                <P>- 헤더는 보통 웹 페이지 상단에 위치하며, 사이트 로고, 제목, 메뉴 등을 포함할 수 있습니다.</P>
+                                <P>- 하나의 페이지에 여러 header 요소가 있을 수 있습니다. 예를 들어, 섹션마다 다른 헤더를 가질 수 있습니다.</P>
+                            </div>
+                        </div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-book-open me-1"></i>
-                                미리보기
+                                footer의 요소
                             </div>
                             <div class="card-body">
-                                <img id="preview" src="#" alt="미리보기">
+                                <P>- footer 요소는 웹 페이지나 섹션의 푸터를 정의합니다.</P>
+                                <P>- 푸터는 일반적으로 웹 페이지의 맨 아래에 위치하며, 저작권 정보, 연락처, 사이트 링크 등을 포함할 수 있습니다.</P>
+                                <P>- 하나의 페이지에 여러 footer 요소가 있을 수 있습니다. 예를 들어, 섹션마다 다른 푸터를 가질 수 있습니다.</P>
                             </div>
                         </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-book-open me-1"></i>
+                                footer의 요소
+                            </div>
+                            <div class="card-body">
+                                <P>- footer 요소는 웹 페이지나 섹션의 푸터를 정의합니다.</P>
+                                <P>- 푸터는 일반적으로 웹 페이지의 맨 아래에 위치하며, 저작권 정보, 연락처, 사이트 링크 등을 포함할 수 있습니다.</P>
+                                <P>- 하나의 페이지에 여러 footer 요소가 있을 수 있습니다. 예를 들어, 섹션마다 다른 푸터를 가질 수 있습니다.</P>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-book-open me-1"></i>
+                                ex) div class="card-header"
+                            </div>
+                            <div class="card-body">
+                                div class="card-body"
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                               ex) 카드 헤더를 선언하지 않았을 때
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-book-open me-1"></i>
+                                장점
+                            </div>
+                            <div class="card-body">
+                                <a>헤더와 푸터 요소를 사용하면 웹 페이지의 구조를 더 명확하게 표현할 수 있으며,</a>
+                                <a> 스타일링이나 스크립팅에 유용한 요소들을 묶어서 관리할 수 있습니다.</a>
+                                <a>이를 통해 유지보수가 쉽고 읽기 쉬운 코드를 작성할 수 있습니다.</a>
+                            </div>
+                        </div>
+                        
                     
                 </main>
               
